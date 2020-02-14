@@ -1,0 +1,38 @@
+{
+    "name": "fuel/fuel",
+    "type": "project",
+    "description" : "FuelPHP is a simple, flexible, community driven PHP 5.3.3+ framework, based on the best ideas of other frameworks, with a fresh start!",
+    "keywords": ["application", "website", "development", "framework", "PHP", "PHP7"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "FuelPHP Development Team",
+            "email": "team@fuelphp.com"
+        }
+    ],
+    "support": {
+        "irc": "irc://irc.freenode.org/fuelphp",
+        "forum": "http://fuelphp.com/forums"
+    },
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0",
+        "parsecsv/php-parsecsv": "^1.1",
+        "ext-json": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MyApp\\": "classes"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "php oil r install"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
